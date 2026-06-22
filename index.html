@@ -639,6 +639,34 @@
     .rubric-item:last-child { border-bottom: 0; }
     .rubric-item strong:last-child { color: var(--teal); }
 
+    .consultation {
+      background: linear-gradient(180deg, #ffffff, var(--cream));
+    }
+
+    .form-card {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--white);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      padding: 28px;
+    }
+
+    .form-embed {
+      width: 100%;
+      overflow: hidden;
+      border: 1px solid rgba(32, 48, 51, 0.08);
+      background: var(--ivory);
+    }
+
+    .form-embed iframe {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: 811px;
+      border: 0;
+    }
+
     footer {
       background: var(--teal-deep);
       color: rgba(255,255,255,0.75);
@@ -675,6 +703,8 @@
       .submission-grid { grid-template-columns: 1fr; }
       .portrait-card { min-height: 420px; }
       .capstone-hero { padding: 30px; }
+      .form-card { padding: 18px; }
+      .form-embed iframe { height: 860px; }
     }
   </style>
 </head>
@@ -698,6 +728,7 @@
         <li><a href="#course">About the Course</a></li>
         <li><a href="#submissions">Weekly Submissions</a></li>
         <li><a href="#capstone">Capstone</a></li>
+        <li><a href="#consultation">Consultation</a></li>
       </ul>
     </nav>
   </header>
@@ -998,12 +1029,40 @@
         </aside>
       </div>
     </section>
+
+    <section id="consultation" class="section consultation">
+      <div class="container">
+        <div class="section-intro">
+          <p class="kicker">Contact for consultation</p>
+          <h2>Interested in regulatory AI support or consultation?</h2>
+          <p class="lead">
+            Please complete the form below to get in touch about consultation, collaboration or responsible AI support
+            for regulatory and research workflows.
+          </p>
+        </div>
+
+        <div class="form-card">
+          <div class="form-embed">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSe9eMz8bDL8PbEZBugObagyDe1L1nbg8X9sEYwi0zxpibLUJQ/viewform?embedded=true"
+              width="640"
+              height="811"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+            >
+              Loading…
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
     <div class="container">
       <strong>Eva Loi Nantongo</strong>
-      Generative AI for Work & Research portfolio · Contact details intentionally omitted
+      Generative AI for Work & Research portfolio · Consultation requests accepted through the contact form
     </div>
   </footer>
 </body>
